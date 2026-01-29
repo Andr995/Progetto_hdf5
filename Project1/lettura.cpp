@@ -61,7 +61,7 @@ herr_t safe_h5fflush(hid_t object_id, H5F_scope_t scope) {
     __try {
         status = H5Fflush(object_id, scope);
     }
-    __except (EXCEPTION_EXECUTE_HANDLER) {
+    __except (EXCEPTION_EXECUTE_HANDLER) { 
         status = -2;
     }
     return status;
